@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #F7F9FC;
+}
+nav{
+    height: 17vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5vh;
+
+    background-color:rgb(186, 190, 179);
+    justify-content: center;
+}
+nav div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav img{
+    width: 10%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    margin:0 1rem;
+}
+nav h1{
+    font-size: 2rem;
+    text-transform: capitalize;
+    text-align: center;
+}
+nav h2{
+    font-size: medium;
+    text-align: center;
+}
+#main{
+    height: 85dvh;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;  */
+    background: url('/1893099.webp');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#main div{
+    width:100%;
+    height: 100%;
+    background: rgba(225,225,225,.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    overflow-y: scroll; 
+}
+#searchbox{
+    width: 90%;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#searchbox input{
+    width:60%;
+    font-size: 1.2rem;
+    outline: none;
+    padding:.5rem;
+    border-radius: 0.8rem;
+    line-height: 1.4rem;
+}
+#searchbox button{
+    margin: 1rem;
+    font-size: 1rem;
+    padding:  .4rem 1.2rem;
+    background: transparent;
+    border-radius: .2rem;
+    cursor: pointer;
+    border-radius: 0.8rem;
+}
+p{
+    width: 90%;
+
+}
+#loading{
+    width: 7rem;
+    display:none;
+}
+.active{
+    display: block !important;
+}
+#fotter{
+    
+    background-color: #EDF2FC;
+    padding: 2rem;
+    font-weight: bolder;
+}
+@media only screen and (max-width: 950px) {
+
+   
+    html{
+        font-size: 90% !important;
+    }
+    nav img{
+        width: 6%;
+    }
+  }
+  @media only screen and (max-width: 650px) {
+
+   
+    html{
+        font-size: 80% !important;
+    }
+    #searchbox{
+        width:100% !important;
+    }
+    #searchbox input{
+        width:80%;
+    }
+    #logo{
+        font-size: 1.5rem;
+    }
+    nav {
+        height:9vh;
+    }
+    #main{
+        height:81dvh;
+    }
+    nav img{
+        width: 10%;
+    }
+  }
+
